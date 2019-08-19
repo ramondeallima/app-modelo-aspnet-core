@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DevIO.UI.Site.Cotroller
+namespace DevIO.UI.Site.Controllers
 {
-    public class HomeControllercs : Controller
+    public class HomeController : Controller
     {
         public IActionResult Index()
         {
