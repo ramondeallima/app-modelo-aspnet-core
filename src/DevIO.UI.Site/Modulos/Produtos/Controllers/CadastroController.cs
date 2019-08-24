@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DevIO.UI.Site.Areas.Produtos.Controllers
+namespace DevIO.UI.Site.Modulos.Produtos.Controllers
 {
     [Area("Produtos")]
     public class CadastroController : Controller
@@ -12,6 +12,7 @@ namespace DevIO.UI.Site.Areas.Produtos.Controllers
         public IActionResult Index()
         {
             return View();
-        }   
+        }
+
     }
 }
