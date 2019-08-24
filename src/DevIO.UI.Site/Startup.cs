@@ -42,7 +42,12 @@ namespace DevIO.UI.Site
             {
                 routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
 
-                routes.MapRoute("modulos", "{area:exists}/{controller=Cadastro}/{action=Index}/{id?}");
+                //Sempre utilizar uma rota padrão genérica
+                //routes.MapRoute("areas", "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                //Ou rotas individuáis onde torna-se possível indicar uma controller padrão
+                routes.MapAreaRoute("AreaProdutos", "Produtos", "Produtos/{controller=Cadastro}/{action=Index}/{id?}");
+                routes.MapAreaRoute("AreaProdutos", "Vendas", "Vendas/{controller=Pedidos}/{action=Index}/{id?}");
 
             });
         }
