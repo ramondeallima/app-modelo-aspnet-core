@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DevIO.UI.Site.Areas.Produtos.Controllers
 {
-    [Area("Produto")]
+    [Area("Produtos")]
     public class CadastroController : Controller
     {
         public IActionResult Index()

@@ -30,7 +30,10 @@ namespace DevIO.UI.Site
             app.UseStaticFiles();   
 
             app.UseMvc(routes => {
-                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");                   
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute("areas", "{area:exists}/{controller=Cadastro}/{action=Index}/{id?}");
+
             });
         }
     }
